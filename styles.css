@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+    --font: Outfit;
+    --bg-primary: #f5f5f5;
+    --btn-primary: #262626;
+    --btn-accent: #323232;
+    --focus-accent: #5d37b859;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    font-family: var(--font);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 500px;
+    padding: 16px;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+form > button {
+    width: 100%;
+    background-color: var(--btn-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+form > button:hover {
+    background-color: var(--btn-accent);
+    cursor: pointer;
+}
+
+form > button:focus-visible,
+.input:focus-visible {
+    outline: 2px solid var(--focus-accent);
+}
+
+textarea {
+    resize: none;
+}
