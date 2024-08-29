@@ -82,6 +82,8 @@ form > button {
     border: none;
     border-radius: 4px;
     padding: 10px 0;
+    position: absolute;
+    bottom: 0;
 }
 
 form > button:hover {
