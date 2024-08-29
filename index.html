@@ -9,50 +9,52 @@
     <body>
         <div class="container">
             <h1>Get in touch with us</h1>
-            <form action="/contact">
-                <div class="input-group">
-                    <label for="first-name" hidden></label>
+            <div class="form_container">
+                <form action="/contact">
+                    <div class="input-group">
+                        <label for="first-name" hidden></label>
+                        <input
+                            type="text"
+                            name="first-name"
+                            id="first-name"
+                            class="input"
+                            placeholder="First name"
+                            required
+                        />
+                        <label for="last-name" hidden></label>
+                        <input
+                            type="text"
+                            name="last-name"
+                            id="last-name"
+                            class="input"
+                            placeholder="Last name"
+                            required
+                        />
+                    </div>
+
+                    <label for="email" hidden></label>
                     <input
-                        type="text"
-                        name="first-name"
-                        id="first-name"
+                        type="email"
+                        name="email"
+                        id="email"
                         class="input"
-                        placeholder="First name"
+                        placeholder="Email"
                         required
                     />
-                    <label for="last-name" hidden></label>
-                    <input
-                        type="text"
-                        name="last-name"
-                        id="last-name"
+
+                    <label for="message" hidden></label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        rows="8"
                         class="input"
-                        placeholder="Last name"
+                        placeholder="Type your message here"
                         required
-                    />
-                </div>
+                    ></textarea>
 
-                <label for="email" hidden></label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="input"
-                    placeholder="example@mail.com"
-                    required
-                />
-
-                <label for="message" hidden></label>
-                <textarea
-                    name="message"
-                    id="message"
-                    rows="8"
-                    class="input"
-                    placeholder="Type your message here"
-                    required
-                ></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

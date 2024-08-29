@@ -3,8 +3,9 @@
 :root {
     --font: Outfit;
     --bg-primary: #f5f5f5;
+    --bg-secondary: #fafafa;
     --btn-primary: #262626;
-    --btn-accent: #323232;
+    --btn-accent: #404040;
     --focus-accent: #5d37b859;
 }
 
@@ -22,23 +23,48 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    width: 500px;
+    width: 100vw;
+    height: 100vh;
     padding: 16px;
-    gap: 16px;
+    gap: 32px;
+}
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #ffffff;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: relative;
+}
+
+.form_aside {
+    width: 400px;
+    height: 500px;
+    border-radius: 4px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.form_aside > img {
+    height: 100%;
     width: 100%;
 }
 
 .input-group {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 16px;
 }
 
 .input {
@@ -46,6 +72,7 @@ form {
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
+    background-color: var(--bg-secondary);
 }
 
 form > button {
